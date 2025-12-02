@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .status-dot{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="clickme">Click me</button> -->
+    
+    <!-- <div id="box" style="width: 100px; height: 100px; background-color: aquamarine;"></div> -->
+
+
+    <input type="text" id="email" placeholder="Enter your email">
+
+    <p id="demo" style="color: hotpink;"></p>
+    <script>
+    // let printEvent = document.getElementById("clickme");
+    // printEvent.addEventListener("click", function() {
+    //     console.log("Button was clicked!");
+    // });
+
+    // let printEvent = document.getElementById("box")
+    // printEvent.addEventListener("mouseover", function() {
+    //     printEvent.style.backgroungColor = "aqua"
+
+        
+    // });
+
+    // printEvent.addEventListener("mouseout", function() {
+    //     printEvent.style.backgroungColor = "red"
+        
+    // });
+
+    // document.addEventlistener("keydown", function(event) {
+    //     console.log("You pressed " ,event.key);
+    // });
+
+    const emailInput = document.getElementById("email");
+    const emailDemo = document.getElementById("emailDemo");
+
+    emailInput.addEventListener("input", function() {
+        if(emailInput.value.includes("@")) {
+            emailDemo.textContent = "";
+            
+        } else {
+            emailDemo.textContent = "Invalid email";
+            emailDemo.style.color = "red";
+        }
+    });
+
+    aliufhiancihcipjcojo
+
+    
+
+
+
+
+    </script>
+
+</body>
+</html>

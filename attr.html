@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .visible {
+            border: 50px solid green;
+            display: block;
+            margin: auto;
+            margin-top:25%;
+            
+
+            
+        }
+
+        .color-change {
+            border-color: red;
+            box-shadow: 50px 50px 50px grey;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img id="ghost" src="https://m.media-amazon.com/images/M/MV5BYmM2MzY2NGEtOGNhNS00MzM1LTg3MGEtZTRkYjBkNzdjYzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" height="300px" width="300px" alt="Ghost">
+
+    <button onclick="func1()">Change Color</button>
+</div>
+
+
+
+    <script>
+        const img = document.getElementById('ghost');
+        img.setAttribute('alt', 'Price'); // Modifying the alt attribute
+        // img.removeAttribute('alt'); // Removing the alt attribute
+
+        console.log(img.getAttribute('alt')); // Accessing the src attribute
+
+        img.classList.add('visible'); // Adding a class
+
+        function func1() {
+            // img.style.borderColor = 'red';
+            // img.classList.remove('visible'); // Removing a class
+
+
+            img.classList.toggle('color-change'); // Toggling a class
+            console.log('Only Opposite');
+
+            document.getElementsByTagName('color-change').innerText = "Changed to Green";
+
+            document.getElementsByName('color-change').innerText = "Remove Green"
+
+
+        } // Function to change border color on button click
+
+
+    </script>
+</body>
+</html>
