@@ -45,3 +45,8 @@ console.log(result) // "Minor"
 
 
 
+
+
+
+
+

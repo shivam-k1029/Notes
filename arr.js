@@ -15,10 +15,9 @@ console.log(arr);
 arr.shift(); // Removing the first element
 console.log(arr);
 
-arr.unshift('First Element'); // Adding an element at the beginning
+arr.unshift(4); // Adding an element at the beginning
 console.log(arr);
 
 arr.splice(2, 1, 'Replaced Element'); // Replacing the third element
 console.log(arr);
-
 

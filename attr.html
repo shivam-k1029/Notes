@@ -25,7 +25,7 @@
 <div class="container">
     <img id="ghost" src="https://m.media-amazon.com/images/M/MV5BYmM2MzY2NGEtOGNhNS00MzM1LTg3MGEtZTRkYjBkNzdjYzk5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" height="300px" width="300px" alt="Ghost">
 
-    <button onclick="func1()">Change Color</button>
+    <button id="btn" onclick="func1()">Change Color</button>
 </div>
 
 
@@ -38,6 +38,7 @@
         console.log(img.getAttribute('alt')); // Accessing the src attribute
 
         img.classList.add('visible'); // Adding a class
+        img.className = 'visible'; // Setting class name
 
         function func1() {
             // img.style.borderColor = 'red';
@@ -47,9 +48,17 @@
             img.classList.toggle('color-change'); // Toggling a class
             console.log('Only Opposite');
 
-            document.getElementsByTagName('color-change').innerText = "Changed to Green";
+            if(img.classList.contains("color-change")){
+                document.getElementById('btn').innerText = "Remove Green";
+            } // If the class is present 
 
-            document.getElementsByName('color-change').innerText = "Remove Green"
+            else{
+                document.getElementById('btn').innerText = "Change Color";
+            } // If the class is absent
+
+            // document.getElementsByTagName('color-change').innerText = "Changed to Green";
+
+            // document.getElementsByName('color-change').innerText = "Remove Green"
 
 
         } // Function to change border color on button click

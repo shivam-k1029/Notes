@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: hotpink;
+    }
+    p{
+        font-size: 20px;
+        color: green;
+        font-weight: bold;
+
+    }
+</style>
+<body>
+    <!-- EventListener -->
+<h1 id="title">DOM Revision</h1>
+<p id="paragraph">This is a paragraph for DOM manipulation.</p>
+<button id="changeTextBtn">Change Text</button>
+<button id="addElementBtn">Add Element</button>
+<button id="removeElementBtn">Remove Element</button>
+<ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+<input type="text" id="inputField" name="text" readonly placeholder="Avaneja Rikhta">
+
+
+    <script>
+        let  button = document.querySelector('#changeTextBtn');
+        button.addEventListener('click', taskToDO);
+
+        function taskToDO(){
+            let para = document.getElementById('paragraph').innerText = "The text has been changed!";
+        }
+
+        let addbtn = document.getElementById('addElementBtn');
+        addbtn.addEventListener('click', function(){
+            let newLi = document.createElement('p') // it will create new P tag
+            newLi.textContent = "New Item"
+            newLi.className = 'para' // create class if not present
+            newLi.classList.add('newpara') // add extra class
+            let parent = document.querySelector('ul')
+            let newLi1 = document.createElement('p')
+
+        })
+
+    </script>
+</body>
+</html>

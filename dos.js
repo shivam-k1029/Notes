@@ -9,6 +9,8 @@ console.log(changeText)
 
 changeText.textContent = "Bla Bla "  // textContent will change the text inside the tag.
 
+changeText.style.color = "red"
+
 let paragraph1 = document.querySelector('p')
 console.log(paragraph1)
 paragraph1.innerHTML = "<u>This is paragraph one changed by JS.</u>" // innerHTML will change the whole HTML inside the tag.
@@ -22,6 +24,15 @@ const nameInput = document.getElementById('name');
 nameInput.value = "Shipra" // changing the value of input tag using JS.
 console.log(nameInput.value);
 
+nameInput.type = "email" // changing the type of input tag using JS.
+console.log(nameInput.type);
+
 
 Welcome.style.fontSize = "24px"; // changing the style of the tag using JS.
 Welcome.style.color = "blue"; // changing the color of the tag using JS.
+
+let a = document.getElementsByClassName('hie')
+
+a[0].textContent = "hieeee"
+
+

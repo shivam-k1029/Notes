@@ -1,10 +1,10 @@
 // // 
-// for(i=0; i<10; i++){
-//     console.log(i)
-        // if(i==5){
-        //     break; // terminates the loop when i is 5
-        // }
-// }
+for(i=0; i<10; i++){
+    console.log(i)
+        if(i==5){
+            break; // terminates the loop when i is 5
+        }
+ }
 
 
 // // while loop

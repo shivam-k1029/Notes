@@ -4,67 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .status-dot{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: aqua;
-        }
-    </style>
 </head>
 <body>
-    <!-- <button id="clickme">Click me</button> -->
-    
-    <!-- <div id="box" style="width: 100px; height: 100px; background-color: aquamarine;"></div> -->
+    <!-- <button id="minus">-</button>
+    <span id="qty">1</span>
+    <button id="plus">+</button>
+
+    <p>Total: $<span id="total">500</span></p> -->
+    <div id="comments">
 
 
-    <input type="text" id="email" placeholder="Enter your email">
+    </div>
 
-    <p id="demo" style="color: hotpink;"></p>
+    <button id="addbtn">Dark Mode</button>
     <script>
-    // let printEvent = document.getElementById("clickme");
-    // printEvent.addEventListener("click", function() {
-    //     console.log("Button was clicked!");
-    // });
-
-    // let printEvent = document.getElementById("box")
-    // printEvent.addEventListener("mouseover", function() {
-    //     printEvent.style.backgroungColor = "aqua"
-
+        let addComment = document.getElementById('addbtn')
+        let addMsg = document.getElementById('comments')
         
-    // });
-
-    // printEvent.addEventListener("mouseout", function() {
-    //     printEvent.style.backgroungColor = "red"
-        
-    // });
-
-    // document.addEventlistener("keydown", function(event) {
-    //     console.log("You pressed " ,event.key);
-    // });
-
-    const emailInput = document.getElementById("email");
-    const emailDemo = document.getElementById("emailDemo");
-
-    emailInput.addEventListener("input", function() {
-        if(emailInput.value.includes("@")) {
-            emailDemo.textContent = "";
-            
-        } else {
-            emailDemo.textContent = "Invalid email";
-            emailDemo.style.color = "red";
-        }
-    });
-
-    aliufhiancihcipjcojo
-
-    
-
-
-
-
+        addbtn.addEventListener('click', function(){
+             let para = document.createElement('p')
+                para.textContent = 'New Comment added'
+                addMsg.append(para)
+        })
     </script>
 
+    <!-- <script>
+        let m = document.getElementById('minus')
+        let p = document.getElementById('plus')
+        let q = document.getElementById('qty')
+        let t = document.getElementById('total')
+
+        let qnt=1;
+        let price = 1000;
+        plus.addEventListener('click', function(){
+            qnt++
+            q.textContent = qnt
+            t.textContent = qnt*price 
+            qnt-- 
+            
+        })
+        minus.addEventListener('click', function(){
+            
+            if(qnt>11){
+                qnt--
+                qnt=1;
+            }
+            q.textContent = qnt
+            t.textContent = qnt*price 
+            
+            
+        })
+
+
+    </script> -->
 </body>
 </html>
