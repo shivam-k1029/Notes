@@ -1,5 +1,5 @@
 // // 
-for(i=0; i<10; i++){
+for(let i=0; i<10; i++){
     console.log(i)
         if(i==5){
             break; // terminates the loop when i is 5
@@ -35,3 +35,11 @@ let obj = {
 for (key in obj){
     console.log(key + ": " + obj[key])
 }   
+
+
+//for of loop
+let arr = [10, 20, 30, 40, 50];
+
+for (let value of arr){
+    console.log(value)
+}
