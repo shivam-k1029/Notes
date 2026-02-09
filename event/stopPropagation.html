@@ -64,6 +64,8 @@
             alert('Box 3 Clicked');
         });
 
+        //stop propagation will stop the event from bubbling up to the parent elements. In this case, when you click on Box 1, it will trigger the alert for Box 1 but will not trigger the alert for the container. However, clicking on Box 2 or Box 3 will still trigger the alert for the container because they do not have stopPropagation() called on their click events.
+
         
 
 

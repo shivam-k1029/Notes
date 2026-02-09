@@ -39,7 +39,11 @@
         }
 
         let addbtn = document.getElementById('addElementBtn');
-        addbtn.addEventListener('click', function(){
+         addbtn.addEventListener('click', function(){ //click: it will trigger the function when the button is clicked
+        // SubmitEvent : it will trigger the function when the form is submitted it will refresh the page so we have to prevent default behavior of the form using event.preventDefault() method
+
+
+
             let newLi = document.createElement('p') // it will create new P tag
             newLi.textContent = "New Item"
             newLi.className = 'para' // create class if not present

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Enter username">
+        <input type="password" name="password" placeholder="Enter password">
+        <button type="submit">Submit</button>
+
+
+    <script>
+        let form = document.getElementById('myForm');   
+        form.addEventListener('submit', function(event){
+            event.preventDefault(); // it will prevent the default behavior of the form which is to refresh the page when the form is submitted
+            alert('Form Submitted');
+        })
+    </script>
+
+</body>
+</html>
