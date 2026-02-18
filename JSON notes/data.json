@@ -1,0 +1,14 @@
+{
+    "restro1": {
+        "id": 1,
+        "isOpen": true,
+        "items": ["item1", "item2"]
+        
+    },
+
+    "restro2": {
+        
+    }
+
+
+}
